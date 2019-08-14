@@ -23,7 +23,7 @@
 		padding-left: 450px;
 		background-position: 367px 86px;
 	}
-	
+
 	.container {
 		max-width: 1024px;
 		padding: 0 39.5px;
@@ -52,7 +52,7 @@
 @media (max-width: 1120px){
 	.about-me__name {
 		font-size: 68px;
-	}	
+	}
 	.gradient-box__container {
 
     max-width: 1045px;
@@ -90,7 +90,7 @@
 @media (max-width: 975px){
 	.about-me__name {
 		font-size: 45px;
-	}	
+	}
 
 	.about-me__job {
 		font-size: 18px;
@@ -98,7 +98,7 @@
 }
 
 @media (max-width: 950px) {
-	 
+
 
 	.symbol-container__symbols_left-center {
 		transform: translate(-56px, 242px) rotate(15deg);
@@ -123,7 +123,7 @@
 	.about-me__job {
 		text-align: center;
 		margin: 13px 0 25px 0;
-		
+
 	}
 
 	.about-me__button {
@@ -145,7 +145,7 @@
 
 	.page-top {
 		height: 577px;
-		
+
 	}
 
 	.photo-wrapper {
@@ -210,27 +210,27 @@
 	}
 
 	.symbol-container__symbols_left-center {
-		transform: translate(-34px, -289px) rotate(15deg);
+		transform: translate(-26px, -239px) rotate(15deg);
 		font-size: 28.85px;
 	}
 	.symbol-container__symbols_top-left {
-		transform: translate(15px, -391px) rotate(30deg);
+		transform: translate(60px, -362px) rotate(30deg);
 		font-size: 24.83px;
 	}
 	.symbol-container__symbols_top-right {
-		transform: translate(164px, -388px) rotate(24deg);
+		transform: translate(229px, -388px) rotate(24deg);
 		font-size: 15.18px;
 	}
-	
+
 	.symbol-container__symbols_bottom-right {
-		transform: translate(57px, -415px) rotate(-26deg);
+		transform: translate(94px, -417px) rotate(-26deg);
 		font-size: 18.74px;
 	}
 
 	.gradient-box__container {
     	padding: 0 20px;
 	}
-	
+
 	.gradient-box {
 		padding: 45px 0
 	}
@@ -252,7 +252,7 @@
 		display: inline-block;
 	}
 
-	
+
 	.number-top__order {
 		border: 2px solid #f82577;
 		padding: 8px;
@@ -278,7 +278,7 @@
 	 }
 	.about-me__name {
 		font-size: 30px;
-		text-align: center; 
+		text-align: center;
 	}
 
 	#job-br {
@@ -319,7 +319,7 @@
 	.about-me__name {
 		font-size: 30px;
 		text-align: center;
-		padding-top: 15px; 
+		padding-top: 15px;
 	}
 
 	.photo-wrapper {
@@ -333,7 +333,24 @@
 }
 
 @media (max-width: 320px) {
+	.symbol-container__symbols_left-center {
+		transform: translate(-34px, -289px) rotate(15deg);
+		font-size: 28.85px;
+	}
+	.symbol-container__symbols_top-left {
+		transform: translate(15px, -391px) rotate(30deg);
+		font-size: 24.83px;
+	}
+	.symbol-container__symbols_top-right {
+		transform: translate(164px, -388px) rotate(24deg);
+		font-size: 15.18px;
+	}
+
+	.symbol-container__symbols_bottom-right {
+		transform: translate(57px, -415px) rotate(-26deg);
+		font-size: 18.74px;
+	}
 	.page-top {
-		
+
 	}
 }
