@@ -47,6 +47,17 @@
 	.symbol-container__symbols_bottom-right:before {
 		content: "</>"
 	}
+	.slide-container {
+		width: 455px;11
+	}
+	.swiper-button-next {
+		right: 0;
+		top: 318px;
+	}
+	.swiper-button-prev {
+		left: 0;
+		top: 318px;
+	}
 }
 
 @media (max-width: 1120px){
@@ -57,7 +68,16 @@
 
     max-width: 1045px;
     padding: 0 40px;
-}
+	}
+	.swiper-button-next, .swiper-button-prev {
+		display: none;
+	}
+	.swiper-pagination {
+		display: block;
+	}
+	.swiper-container {
+		margin-bottom: 100px;
+	}
 }
 
 @media (max-width: 1024px) {
@@ -82,6 +102,17 @@
 
 	.about-me__name {
 		font-size: 54px;
+	}
+
+	.works-container__item {
+		flex-basis: 50%;
+
+	}
+	.works-container__item:nth-child(1){
+		margin-bottom: 80px;
+	}
+	.works__br {
+		display: block;
 	}
 
 
@@ -201,6 +232,9 @@
 	.symbol-container__symbols_bottom-right {
 		transform: translate(226px, -416px) rotate(30deg);
 	}
+	.works-container__item {
+		font-size: 19px;
+	}
 }
 
 @media (max-width: 640px) {
@@ -245,6 +279,47 @@
 		font-size: 28px;
 		line-height: 40px;
 	}
+	.works-container__item {
+		flex-basis: 100%;
+	}
+	.works-container__item:not(:last-child) {
+		margin-bottom: 50px;
+	}
+	.my-works {
+		padding: 45px 0 50px;
+	}
+
+	.article-head {
+		margin-bottom: 40px;
+		font-size: 45px;
+	}
+
+	.works-container {
+		margin-bottom: 50px;
+	}
+
+	.footer-bottom {
+		padding: 15px 0;
+	}
+
+	.footer-top {
+		padding: 45px 0 50px;
+	}
+	.swiper-pagination-bullet {
+		width: 10px;
+		height: 10px;
+		margin: 0 16px !important;
+	}
+
+	.swiper-container {
+		margin-bottom: 40px;
+	}
+	.swiper-pagination {
+		margin-bottom: 50px;
+	}
+	.my-examples {
+		padding: 40px 0 50px;
+	}
 }
 
 @media (max-width: 590px) {
@@ -283,6 +358,22 @@
 
 	#job-br {
 		display: block;
+	}
+
+	.article-head {
+		font-size: 30px;
+	}
+
+	.works__img {
+		height: 60px;
+		width: auto;
+	}
+
+	.works-container__item {
+		font-size: 16px;
+	}
+	.come-back {
+		height: 100px;
 	}
 }
 
@@ -329,6 +420,9 @@
 
 	.footer-request {
 		font-size: 20px;
+	}
+	.come-back {
+		height: 88px;
 	}
 }
 

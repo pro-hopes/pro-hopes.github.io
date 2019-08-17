@@ -4,19 +4,46 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/fonts.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
-
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="js/iconfonts.js"></script>
-	<link rel="stylesheet" type="text/css" href="css/media-styles.css">
 	<link rel="stylesheet" type="text/css" href="css/animations.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/swiper.css">
+	<link rel="stylesheet" type="text/css" href="css/media-styles.css">
 	<title>Document</title>
 </head>
 <body>
+<!-- hidden blocks -->
+<div class="all-screen">
+	<div class="slide-menu">
+		<div class="come-back">
+			<button class="burger come-back__burger"></button>
+		</div>
+		<ul class="slide-menu__list">
+			<li class="slide-menu__item"><a href="#">Услуги</a></li>
+			<li class="slide-menu__item slide-menu__item--active"><a href="#">Портфолио</a></li>
+			<li class="slide-menu__item"><a href="#">Стоимость</a></li>
+		</ul>
+	</div>
+	<div class="form-window">
+		<h2 class="form-window__head">Закажите звонок</h2>
+		<form class="order-form" action="index.html" method="post">
+			<ul>
+				<li><span class="order-form__helper">Введите имя</span><input class="order-phone__input" type="text" name="name" placeholder="Ваше имя"></li>
+				<li><span class="order-form__helper">Введите телефон</span><input class="order-phone__input" type="tel"  name="telephone" placeholder="Ваш телефон"></li>
+				<li><span class="order-form__helper">Введите адресс почтового ящика</span><input class="order-phone__input" type="email" name="email" placeholder="email@mail.com"></li>
+				<li>Предпочитаемый метод связи</li>
+				<li><label><input type="radio" id="Pnone" name="prefer-to-connect" value="Pnone">Звонок</label><label><input type="radio" id="Email" name="prefer-to-connect" value="Email">Почта</label></li>
+				<li><input class="order-form__submit" type="submit" value="Отправить"></li>
+			</ul>
+
+
+		</form>
+	</div>
+</div>
 <!-- тестовый комментарий -->
 	<header class="header">
-
 		<div class="container header__container">
-
 					<button class="burger header__burger" aria-label="Открыть меню"></button>
 					<nav class="nav">
 						<ul class="menu">
@@ -24,23 +51,16 @@
 							<li class="menu__item menu__item--active"><a href="#">Портфолио</a></li>
 							<li class="menu__item"><a href="#">Стоимость</a></li>
 						</ul>
-
 					</nav>
-
 					<div class="number-top">
-						<a class="number-top__number" href="tel:+74999955577">+7 (499) 995-55-77</a>
-						<a class="number-top__order" href="#"><i class="fas fa-phone-alt number-top__order-icon" aria-hidden="true"></i>Заказать звонок</a>
-
+						<a class="number-top__number" href="tel:+77086300760">+7 (708) 630-07-60</a>
+						<a class="number-top__order order-button" href="#"><i class="fas fa-phone-alt number-top__order-icon" aria-hidden="true"></i>Заказать звонок</a>
 					</div>
-					<!--<a href="#" class="opi"><div class="opi"><i class="fas fa-phone-alt number-top__order-icon"></i></div></a>-->
-
 		</div>
 	</header>
-
 	<main>
 		<article class="page-top">
 			<div class="container page-top__container">
-
 				<div class="symbol-container">
 					<span class="symbol-container__symbols symbol-container__symbols_top-left">{ }</span>
 					<span class="symbol-container__symbols symbol-container__symbols_left-center">#</span>
@@ -48,28 +68,48 @@
 					<span class="symbol-container__symbols symbol-container__symbols_bottom-left">&lt;<span>/</span>&gt;</span>
 					<span class="symbol-container__symbols symbol-container__symbols_bottom-right"></span>
 				</div>
-
 				<div class="about-me">
-						<h1 class="about-me__name">Дмитрий Алексеев</h1>
+						<h1 class="about-me__name">Иван Ташманов</h1>
 						<p class="about-me__job">Frontend-разработчик и веб-<br id="job-br">верстальщик</p>
 						<a href="#my-works" class="button about-me__button">Узнать больше</a>
 				</div>
 			</div>
-
-
 			<div class="photo-wrapper">
-				<img src="/img/Man.png" class="photo-wrapper__photo" alt="photo">
+				<img src="img/Man.png" class="photo-wrapper__photo" alt="photo">
 			</div>
-
 		</article>
-
-		<div class="container">
-			<a name="my-works"></a>
-			<a href="#price" class="button">Узнать стоимость</a>
-			<button class="arrow" aria-label="Предыдущий слайд"></button>
-			<button class="button">Заказать проект</button>
-		</div>
-
+		<article class="my-works" name="my-works">
+			<div class="container">
+				<a name="my-works"></a>
+				<h2 class="article-head">Что я делаю</h2>
+				<div class="works-container">
+					<a class="works works-container__item"><img class="works__img" src="img/tools-and-utensils.png">Вёрстка лендинг–страниц<br class="works__br"> и сайтов любой сложности</a>
+					<a class="works works-container__item"><img class="works__img" src="img/responsive.png">Адаптивная вёрстка под все<br class="works__br"> браузеры и устройства</a>
+					<a class="works works-container__item"><img class="works__img" src="img/programming.png">Frontend–разработка<br class="works__br"> и программирование</a>
+					<a class="works works-container__item"><img class="works__img" src="img/coding .png">Исправление и доработка<br class="works__br"> существующей вёрстки</a>
+				</div>
+				<a href="#price" class="button my-works__button">Узнать стоимость</a>
+			</div>
+		</article>
+		<article class="my-examples">
+			<div class="container my-examples__container">
+				<h2 class="article-head">Примеры моих работ</h2>
+				<!-- Swiper -->
+				<div class="swiper-container">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide"><a href="#" class="slide-container"><img src="img/Layer 2.png">Сайт психолога Веры Антоновой</a></div>
+						<div class="swiper-slide"><a href="#" class="slide-container"><img src="img/Layer 1.png">Сайт магазина детской одежды</a></div>
+						<div class="swiper-slide"><a href="#" class="slide-container"><img src="img/Layer 3.png">Сайт магазина «Рыболов»</a></div>
+					</div>
+				</div>
+				<!-- Add Pagination -->
+				<div class="swiper-pagination"></div>
+				<!-- Add Arrows -->
+				<div class="swiper-button-next"></div>
+				<div class="swiper-button-prev"></div>
+				<button class="button my-examples__button order-button">Заказать проект</button>
+			</div>
+		</article>
 		<article class="gradient-box"><a name="price"></a> <!-- Это якорь(или его не так делать надо?) -->
 		<div class="gradient-box__container">
 			<p class="gradient-box__ad">Адаптивная вёрстка под&nbsp;все&nbsp;устройства
@@ -77,21 +117,21 @@
 			<p class="gradient-box__clarification">*&nbsp;&nbsp;Срок и стоимость могут отличаться от&nbsp;заявленных и&nbsp;рассчитываются  индивидуально, в&nbsp;зависимости от&nbsp;сложности задач.</p>
 		</div>
 	</article>
-
 	</main>
-
 	<footer>
-
 		<div class="footer-top">
 			<div class="container footer-top__container">
-				<div>dwdadawdawdwadwadwwad</div>
+			<ul class="footer-menu">
+				<li class="footer-menu__item"><a href="#">Услуги</a></li>
+				<li class="footer-menu__item"><a href="#">Портфолио</a></li>
+				<li class="footer-menu__item"><a href="#">Стоимость</a></li>
+			</ul>
 				<div class="footer-top__request">
-					<a class="footer-top__request-items" href="tel:+74999955577"> <i class="fas fa-phone-alt" aria-hidden="true"></i> +7 (499) 995-55-77</a>
+					<a class="footer-top__request-items" href="tel:+77086300760"> <i class="fas fa-phone-alt" aria-hidden="true"></i> +7 (708) 630-07-60</a>
 					<a class="footer-top__request-items" href="mailto:email@skillbox.ru"><i class="fas fa-envelope" aria-hidden="true"></i> dmitry@alekseev.com</a>
 				</div>
 				<div class="follow-us-phone">
-					<a class="follow-us-phone__order-button">Заказать звонок</a>
-
+					<a class="follow-us-phone__order-button order-button">Заказать звонок</a>
 					<ul class="soc-icons-list">
 						<li>
 							<a href="#" class="soc-icon soc-icon_vk" aria-label="vk"></a>
@@ -106,23 +146,18 @@
 							<a href="#" class="soc-icon soc-icon_inst" aria-label="instagram"></a>
 						</li>
 					</ul>
-
-
-
-
 				</div>
 			</div>
 		</div>
-
+		<div class="footer-bottom">
+			© Иван Ташманов, 2016 – 2019
+		</div>
 	</footer>
 
-
-
-
-
-
-
-
-
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/swiper.js"></script>
+<script src="js/slide-menu.js" charset="utf-8"></script>
+<script src="js/form.js" charset="utf-8"></script>
 </body>
 </html>
