@@ -14,6 +14,7 @@ div, header, nav, article, input{
 
 a {
 	text-decoration: none;
+	font-family: Roboto, sans-serif;
 }
 
 
@@ -83,7 +84,7 @@ a {
     font-weight: bold;
     text-decoration: none;
     color: black;
-		font-family: Roboto;
+		font-family: Roboto, sans-serif;
 }
 
 .number-top__order {
@@ -214,7 +215,7 @@ i {
     color: #8993ad;
     display: block;
     cursor: pointer;
-		font-family: Roboto;
+		font-family: Roboto, sans-serif;
 }
 
 .footer-top__request-items:first-child {
@@ -495,7 +496,7 @@ i {
 	border-radius: 5%;
 	color: white;
 	font-size: 20px;
-	font-family: Roboto;
+	font-family: Roboto, sans-serif;
 
 }
 #Email {
