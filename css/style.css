@@ -512,13 +512,13 @@ ul.callbacks_tabs.callbacks1_tabs {
 .b-animate-go:hover .b-animate{
 	visibility:visible;
 }
-.grid-top > a > img {
+/* .grid-top > a > img {
 	height: 270px;
-}
+} */
 @media(max-width: 1000px) {
-	.grid-top > a > img {
+	/* .grid-top > a > img {
 		height: auto;
-	}
+	} */
 }
 .b-from-left{
 	position: relative;
