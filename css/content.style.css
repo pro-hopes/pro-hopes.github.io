@@ -76,6 +76,7 @@
 	padding: 15px;
 	border-radius: 15px;
 	margin-bottom: 300px;
+	box-shadow: 0 0 40px grey;
 
 }
 @media (max-width: 480px) {
@@ -88,7 +89,7 @@
 	margin-bottom: 30px;
 	width: 100%;
 	height: auto;
-	border-radius: 15px;
+	/* border-radius: 15px; */
 }
 .closeX {
 	position: absolute;
@@ -141,4 +142,7 @@
 	.min-win {
 		display: inline;
 	}
+}
+h4, h3 {
+	margin: 20px;
 }
